@@ -6,8 +6,8 @@ from flask import _request_ctx_stack, request , abort
 from jose import jwt
 
 AUTH0_DOMAIN = os.getenv('AUTH0_DOMAIN')
-ALGORITHMS = os.environ['ALGORITHMS']
-API_AUDIENCE = os.environ['API_AUDIENCE']
+ALGORITHMS = os.getenv('ALGORITHMS')
+API_AUDIENCE = os.getenv('API_AUDIENCE')
 
 ## AuthError Exception
 '''
