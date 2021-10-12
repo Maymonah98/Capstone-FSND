@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "3ca6d3f9-78be-4c1d-bf78-497d89df83fb",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "capstone-project",
+			"item": [
+				{
+					"name": "/movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3TXdLQUNJYWxDUzllZHAwQnl4dSJ9.eyJpc3MiOiJodHRwczovL2Rldi1kMnc0aG9ueC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDgxNDg3ODQ4OTIxMjY4MjgwODUiLCJhdWQiOiJkZXYiLCJpYXQiOjE2MzQwNTkyMzcsImV4cCI6MTYzNDE0NTYzNywiYXpwIjoiMG5IVlFFeHFYVDRRR2piVnJmSjQwUkwyY2c5TXMzNTEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOm1vdmllcyIsInBvc3Q6bW92aWVzIl19.dX37kM2YvQnJj9QWEOLD5okzqsqbTbuh5afqNVODdLp_i3cnQ3ZlmEQYi6bu_l6yVKU1LGI81-zChVKlIbrVOyYQnGtI8AZlvZuaJdqpsvE6qD5-5gRFDeiVEHXKCZJ5rUI34LUVqZlMRXWxd-pmbXIPIrFAqb2Qf9I4f-0Z1QS-fa_ov8SBQaN1hb9qVPGHYUkCw1mf4Fkz2cIRVVE8K9UD5bKNFU4oZILllv0xGDy0zzdSmEDdr6LYZboLGL-OYXTWaIurY6-FWLD3ijeQUxBayC-OwFrzcRjahmXTOn1AaSQh9_ih3gpCGxZ2GOLI-99blK4sqhfmcjr1HfGRiw\n",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"the new movie\",\n    \"release_date\": \" 10, 01, 2021 \"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/movies",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3TXdLQUNJYWxDUzllZHAwQnl4dSJ9.eyJpc3MiOiJodHRwczovL2Rldi1kMnc0aG9ueC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDgxNDg3ODQ4OTIxMjY4MjgwODUiLCJhdWQiOiJkZXYiLCJpYXQiOjE2MzQwNTkyMzcsImV4cCI6MTYzNDE0NTYzNywiYXpwIjoiMG5IVlFFeHFYVDRRR2piVnJmSjQwUkwyY2c5TXMzNTEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOm1vdmllcyIsInBvc3Q6bW92aWVzIl19.dX37kM2YvQnJj9QWEOLD5okzqsqbTbuh5afqNVODdLp_i3cnQ3ZlmEQYi6bu_l6yVKU1LGI81-zChVKlIbrVOyYQnGtI8AZlvZuaJdqpsvE6qD5-5gRFDeiVEHXKCZJ5rUI34LUVqZlMRXWxd-pmbXIPIrFAqb2Qf9I4f-0Z1QS-fa_ov8SBQaN1hb9qVPGHYUkCw1mf4Fkz2cIRVVE8K9UD5bKNFU4oZILllv0xGDy0zzdSmEDdr6LYZboLGL-OYXTWaIurY6-FWLD3ijeQUxBayC-OwFrzcRjahmXTOn1AaSQh9_ih3gpCGxZ2GOLI-99blK4sqhfmcjr1HfGRiw\n",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/movies/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/movies",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/18",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3TXdLQUNJYWxDUzllZHAwQnl4dSJ9.eyJpc3MiOiJodHRwczovL2Rldi1kMnc0aG9ueC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDgxNDg3ODQ4OTIxMjY4MjgwODUiLCJhdWQiOiJkZXYiLCJpYXQiOjE2MzQwNTkyMzcsImV4cCI6MTYzNDE0NTYzNywiYXpwIjoiMG5IVlFFeHFYVDRRR2piVnJmSjQwUkwyY2c5TXMzNTEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOm1vdmllcyIsInBvc3Q6bW92aWVzIl19.dX37kM2YvQnJj9QWEOLD5okzqsqbTbuh5afqNVODdLp_i3cnQ3ZlmEQYi6bu_l6yVKU1LGI81-zChVKlIbrVOyYQnGtI8AZlvZuaJdqpsvE6qD5-5gRFDeiVEHXKCZJ5rUI34LUVqZlMRXWxd-pmbXIPIrFAqb2Qf9I4f-0Z1QS-fa_ov8SBQaN1hb9qVPGHYUkCw1mf4Fkz2cIRVVE8K9UD5bKNFU4oZILllv0xGDy0zzdSmEDdr6LYZboLGL-OYXTWaIurY6-FWLD3ijeQUxBayC-OwFrzcRjahmXTOn1AaSQh9_ih3gpCGxZ2GOLI-99blK4sqhfmcjr1HfGRiw\n",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"The new title\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/movies/21",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"movies",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/actors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/coolkids",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "localhost:5000"
+		}
+	]
+}
