@@ -24,7 +24,7 @@ python3 app.py
 
 These commands put the application in development and directs our application to use the `app.py` file. Working in development mode shows an interactive debugger in the console and restarts the server whenever changes are made. If running locally on Windows, look for the commands in the [Flask documentation](http://flask.pocoo.org/docs/1.0/tutorial/factory/).
 
-The application is run on `http://127.0.0.1:5000/` by default and is a proxy in the frontend configuration. 
+The application is run on `http://127.0.0.1:5000/` by default if there is no other DATABASE_URL provided in with environment variables file setup.sh  . 
 
 #### Frontend
 
@@ -49,8 +49,7 @@ All tests are kept in that file and should be maintained as updates are made to 
 ## API Reference
 
 ### Getting Started
-- Base URL: At present this app can only be run locally and is not hosted as a base URL. The backend app is hosted at the default, `http://127.0.0.1:5000/`, which is set as a proxy in the frontend configuration. 
-- Authentication: This version of the application does not require authentication or API keys. 
+The backend app is hosted at the default, `http://127.0.0.1:5000/`.
 
 ### Error Handling
 Errors are returned as JSON objects in the following format:

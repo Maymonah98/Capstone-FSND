@@ -14,7 +14,13 @@ def create_app(test_config=None):
   CORS(app)
   
   # db_drop_and_create_all()
-
+  @app.after_request
+  def after_request(response):
+        response.headers.add('Access-Control-Allow-Headers',
+                             'Content-Type, Authorization')
+        response.headers.add('Access-Control-Allow-Headers',
+                             'GET, POST, PATCH, DELETE, OPTIONS')
+        return response
   @app.route('/')
   def get_greeting():
       # excited = os.environ['EXCITED']
