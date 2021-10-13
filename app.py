@@ -50,7 +50,7 @@ def create_app(test_config=None):
   # POST Movies *ITS WORKING*
   @app.route('/movies',methods=['POST'])
   @requires_auth('post:movies')
-  def post_movies(jwt):
+  def post_movies(payload):
       body=request.get_json()
       new_title= body.get('title')
       new_release_date=body.get('release_date')
@@ -70,7 +70,7 @@ def create_app(test_config=None):
 
   @app.route('/movies/<int:id>',methods=['PATCH'])
   @requires_auth('patch:movies')
-  def patch_movie(jwt,id):
+  def patch_movie(payload,id):
       movie = Movies.query.filter(Movies.id==id).one_or_none()
 
       if movie is None:
@@ -89,7 +89,7 @@ def create_app(test_config=None):
 
   @app.route('/movies/<int:id>',methods=['DELETE'])
   @requires_auth('delete:movies')
-  def delete_movie(jwt,id):
+  def delete_movie(payload,id):
       try:
         movie = Movies.query.filter(Movies.id==id).one_or_none()
         if movie is None:
