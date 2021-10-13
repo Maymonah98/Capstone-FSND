@@ -116,17 +116,17 @@ class CapstoneTestCase(unittest.TestCase):
         self.assertEqual(data['message'], 'Not found')
     
 # DELETE /movies/6 success
-    # def test_delete_movie_success(self):
-    #     res=self.client().delete('/movies/6', headers={
-    #         "Authorization": 'bearer ' + self.executive_producer_token})
-    #     data=json.loads(res.data)
+    def test_delete_movie_success(self):
+        res=self.client().delete('/movies/6', headers={
+            "Authorization": 'bearer ' + self.executive_producer_token})
+        data=json.loads(res.data)
 
-    #     movie= Movies.query.filter(Movies.id==6).one_or_none()
+        movie= Movies.query.filter(Movies.id==6).one_or_none()
         
-    #     self.assertEqual(res.status_code,200)
-    #     self.assertEqual(data['success'],True)
-    #     self.assertEqual(data['delete'],6)
-    #     self.assertEqual(movie,None)
+        self.assertEqual(res.status_code,200)
+        self.assertEqual(data['success'],True)
+        self.assertEqual(data['delete'],6)
+        self.assertEqual(movie,None)
     
 # DELETE /movies/1000 fail
     def test_400_if_movie_does_not_exist(self):

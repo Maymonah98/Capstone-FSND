@@ -23,16 +23,16 @@ def create_app(test_config=None):
         return response
   @app.route('/')
   def get_greeting():
-      # excited = os.environ['EXCITED']
-      greeting = "Hello" 
-      # if excited == 'true': greeting = greeting + "!!!!!"
+      excited = os.environ['EXCITED']
+      greeting = "Welcome" 
+      if excited == 'true': greeting = greeting + "!!!!!"
       return greeting
 
   @app.route('/coolkids')
   def be_cool():
       return "Be cool, man, be coooool! You're almost a FSND grad!"
 
-  # GET Movies *ITS WORKING*
+  # GET Movies 
   @app.route('/movies')
   def movies():
       movies = Movies.query.all()
@@ -47,10 +47,10 @@ def create_app(test_config=None):
           }),200
 
   
-  # POST Movies *ITS WORKING*
+  # POST Movies 
   @app.route('/movies',methods=['POST'])
   @requires_auth('post:movies')
-  def post_movies(payload):
+  def post_movies(jwt):
       body=request.get_json()
       new_title= body.get('title')
       new_release_date=body.get('release_date')
@@ -70,7 +70,7 @@ def create_app(test_config=None):
 
   @app.route('/movies/<int:id>',methods=['PATCH'])
   @requires_auth('patch:movies')
-  def patch_movie(payload,id):
+  def patch_movie(jwt,id):
       movie = Movies.query.filter(Movies.id==id).one_or_none()
 
       if movie is None:
@@ -85,11 +85,11 @@ def create_app(test_config=None):
           "movie": formatted_movie
           }),200
 
-  # DELETE Movies *ITS WORKING*
+  # DELETE Movies 
 
   @app.route('/movies/<int:id>',methods=['DELETE'])
   @requires_auth('delete:movies')
-  def delete_movie(payload,id):
+  def delete_movie(jwt,id):
       try:
         movie = Movies.query.filter(Movies.id==id).one_or_none()
         if movie is None:
@@ -103,7 +103,7 @@ def create_app(test_config=None):
       except:
           abort(400)
 
-  # GET Actors *ITS WORKING*
+  # GET Actors 
   @app.route('/actors')
   def actors():
       actors = Actors.query.all()
@@ -148,21 +148,21 @@ def create_app(test_config=None):
         }), e.status_code
 
 
-#   @app.errorhandler(401)
-#   def unauthorized(error):
-#     return jsonify({
-#         "success": False,
-#         "error":401,
-#         "message": 'Unauthorized'
-#       }),401
+  @app.errorhandler(401)
+  def unauthorized(error):
+    return jsonify({
+        "success": False,
+        "error":401,
+        "message": 'Unauthorized'
+      }),401
 
-#   @app.errorhandler(403)
-#   def forbidden(error):
-#         return jsonify({
-#             'success': False,
-#             'error':403,
-#             'message': 'Forbidden'
-#         }),403
+  @app.errorhandler(403)
+  def forbidden(error):
+        return jsonify({
+            'success': False,
+            'error':403,
+            'message': 'Forbidden'
+        }),403
 
   @app.errorhandler(400)
   def bad_request(error):
@@ -181,5 +181,5 @@ if __name__ == '__main__':
     port = int(os.environ.get("PORT",5000))
     app.run(host='127.0.0.1',port=port,debug=True)
 
-# https://dev-d2w4honx.us.auth0.com/authorize?audience=dev&response_type=token&client_id=0nHVQExqXT4QGjbVrfJ40RL2cg9Ms351&redirect_uri=https://127.0.0.1:8080/login-results
+
 

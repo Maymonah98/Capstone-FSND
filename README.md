@@ -181,7 +181,9 @@ The API will return four error types when requests fail:
 }
 ```
 
-## Roles and Permissions
+## Authentication Roles and Permissions
+
+Auth0 is used for authintication AUTH0_DOMAIN, ALGORITHMS , API_AUDIENCE and jwt token for each role must be provided as enviroment variables in setup.sh file .
 
 ### Casting Assistant
 - Can view actors and movies
@@ -194,7 +196,10 @@ The API will return four error types when requests fail:
 - All permissions a Casting Director has and…
 - delete a movie from the database
 
-## Deployment N/A
+## Deployment 
+- The capstone project is hosted by Heroku with the following link https://capstone25.herokuapp.com/
+
+- Endpoints can be requested by importing postman collection file
 
 ## Authors
 Maymonah Althunayan

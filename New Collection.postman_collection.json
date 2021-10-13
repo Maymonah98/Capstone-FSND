@@ -16,7 +16,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3TXdLQUNJYWxDUzllZHAwQnl4dSJ9.eyJpc3MiOiJodHRwczovL2Rldi1kMnc0aG9ueC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDgxNDg3ODQ4OTIxMjY4MjgwODUiLCJhdWQiOiJkZXYiLCJpYXQiOjE2MzQwNTkyMzcsImV4cCI6MTYzNDE0NTYzNywiYXpwIjoiMG5IVlFFeHFYVDRRR2piVnJmSjQwUkwyY2c5TXMzNTEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOm1vdmllcyIsInBvc3Q6bW92aWVzIl19.dX37kM2YvQnJj9QWEOLD5okzqsqbTbuh5afqNVODdLp_i3cnQ3ZlmEQYi6bu_l6yVKU1LGI81-zChVKlIbrVOyYQnGtI8AZlvZuaJdqpsvE6qD5-5gRFDeiVEHXKCZJ5rUI34LUVqZlMRXWxd-pmbXIPIrFAqb2Qf9I4f-0Z1QS-fa_ov8SBQaN1hb9qVPGHYUkCw1mf4Fkz2cIRVVE8K9UD5bKNFU4oZILllv0xGDy0zzdSmEDdr6LYZboLGL-OYXTWaIurY6-FWLD3ijeQUxBayC-OwFrzcRjahmXTOn1AaSQh9_ih3gpCGxZ2GOLI-99blK4sqhfmcjr1HfGRiw\n",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3TXdLQUNJYWxDUzllZHAwQnl4dSJ9.eyJpc3MiOiJodHRwczovL2Rldi1kMnc0aG9ueC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDgxNDg3ODQ4OTIxMjY4MjgwODUiLCJhdWQiOiJkZXYiLCJpYXQiOjE2MzQxNDUxNjgsImV4cCI6MTYzNDIzMTU2OCwiYXpwIjoiMG5IVlFFeHFYVDRRR2piVnJmSjQwUkwyY2c5TXMzNTEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOm1vdmllcyIsInBvc3Q6bW92aWVzIl19.StdlemsBrl33XwSaYCzdRXc0jjI1EDZw_NZaOrY6i4i4QxAeaynkL-PJQ10Z-aUGYauIhIWDjk46QT6QKt9Ss4EuJqUqUcReQK3gwdTR614Rc1PiTpb8QPpAlXtELC-oHcXliz_wPsCNgVFJjTVyGU_HniDT4zBf95lmFSc7OEVMOn2-vOR5Pv24CI5UPv3cKxelfu4tdAl3kxOkcgrwCSwTorITM8fmvhE1tEIRG2w8D5jdf1M_X3Yn-SnjFZIRnF_1P01_At5Ub48U9UJnW6AxxAyPh82n0thFaZ77sPbyknXmEzizlM0pmLwvGVDwYMQlbNHEJ00ykUFTHwJe4Q",
 									"type": "string"
 								}
 							]
@@ -33,10 +33,11 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}/movies",
+							"raw": "localhost:5000/movies",
 							"host": [
-								"{{host}}"
+								"localhost"
 							],
+							"port": "5000",
 							"path": [
 								"movies"
 							]
@@ -52,7 +53,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3TXdLQUNJYWxDUzllZHAwQnl4dSJ9.eyJpc3MiOiJodHRwczovL2Rldi1kMnc0aG9ueC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDgxNDg3ODQ4OTIxMjY4MjgwODUiLCJhdWQiOiJkZXYiLCJpYXQiOjE2MzQwNTkyMzcsImV4cCI6MTYzNDE0NTYzNywiYXpwIjoiMG5IVlFFeHFYVDRRR2piVnJmSjQwUkwyY2c5TXMzNTEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOm1vdmllcyIsInBvc3Q6bW92aWVzIl19.dX37kM2YvQnJj9QWEOLD5okzqsqbTbuh5afqNVODdLp_i3cnQ3ZlmEQYi6bu_l6yVKU1LGI81-zChVKlIbrVOyYQnGtI8AZlvZuaJdqpsvE6qD5-5gRFDeiVEHXKCZJ5rUI34LUVqZlMRXWxd-pmbXIPIrFAqb2Qf9I4f-0Z1QS-fa_ov8SBQaN1hb9qVPGHYUkCw1mf4Fkz2cIRVVE8K9UD5bKNFU4oZILllv0xGDy0zzdSmEDdr6LYZboLGL-OYXTWaIurY6-FWLD3ijeQUxBayC-OwFrzcRjahmXTOn1AaSQh9_ih3gpCGxZ2GOLI-99blK4sqhfmcjr1HfGRiw\n",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3TXdLQUNJYWxDUzllZHAwQnl4dSJ9.eyJpc3MiOiJodHRwczovL2Rldi1kMnc0aG9ueC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDgxNDg3ODQ4OTIxMjY4MjgwODUiLCJhdWQiOiJkZXYiLCJpYXQiOjE2MzQxNDUxNjgsImV4cCI6MTYzNDIzMTU2OCwiYXpwIjoiMG5IVlFFeHFYVDRRR2piVnJmSjQwUkwyY2c5TXMzNTEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOm1vdmllcyIsInBvc3Q6bW92aWVzIl19.StdlemsBrl33XwSaYCzdRXc0jjI1EDZw_NZaOrY6i4i4QxAeaynkL-PJQ10Z-aUGYauIhIWDjk46QT6QKt9Ss4EuJqUqUcReQK3gwdTR614Rc1PiTpb8QPpAlXtELC-oHcXliz_wPsCNgVFJjTVyGU_HniDT4zBf95lmFSc7OEVMOn2-vOR5Pv24CI5UPv3cKxelfu4tdAl3kxOkcgrwCSwTorITM8fmvhE1tEIRG2w8D5jdf1M_X3Yn-SnjFZIRnF_1P01_At5Ub48U9UJnW6AxxAyPh82n0thFaZ77sPbyknXmEzizlM0pmLwvGVDwYMQlbNHEJ00ykUFTHwJe4Q",
 									"type": "string"
 								}
 							]
@@ -60,10 +61,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/movies/3",
+							"raw": "localhost:5000/movies/3",
 							"host": [
-								"{{host}}"
+								"localhost"
 							],
+							"port": "5000",
 							"path": [
 								"movies",
 								"3"
@@ -78,10 +80,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/movies",
+							"raw": "localhost:5000/movies",
 							"host": [
-								"{{host}}"
+								"localhost"
 							],
+							"port": "5000",
 							"path": [
 								"movies"
 							]
@@ -90,14 +93,14 @@
 					"response": []
 				},
 				{
-					"name": "/movies/18",
+					"name": "/movies/2",
 					"request": {
 						"auth": {
 							"type": "bearer",
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3TXdLQUNJYWxDUzllZHAwQnl4dSJ9.eyJpc3MiOiJodHRwczovL2Rldi1kMnc0aG9ueC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDgxNDg3ODQ4OTIxMjY4MjgwODUiLCJhdWQiOiJkZXYiLCJpYXQiOjE2MzQwNTkyMzcsImV4cCI6MTYzNDE0NTYzNywiYXpwIjoiMG5IVlFFeHFYVDRRR2piVnJmSjQwUkwyY2c5TXMzNTEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOm1vdmllcyIsInBvc3Q6bW92aWVzIl19.dX37kM2YvQnJj9QWEOLD5okzqsqbTbuh5afqNVODdLp_i3cnQ3ZlmEQYi6bu_l6yVKU1LGI81-zChVKlIbrVOyYQnGtI8AZlvZuaJdqpsvE6qD5-5gRFDeiVEHXKCZJ5rUI34LUVqZlMRXWxd-pmbXIPIrFAqb2Qf9I4f-0Z1QS-fa_ov8SBQaN1hb9qVPGHYUkCw1mf4Fkz2cIRVVE8K9UD5bKNFU4oZILllv0xGDy0zzdSmEDdr6LYZboLGL-OYXTWaIurY6-FWLD3ijeQUxBayC-OwFrzcRjahmXTOn1AaSQh9_ih3gpCGxZ2GOLI-99blK4sqhfmcjr1HfGRiw\n",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3TXdLQUNJYWxDUzllZHAwQnl4dSJ9.eyJpc3MiOiJodHRwczovL2Rldi1kMnc0aG9ueC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDgxNDg3ODQ4OTIxMjY4MjgwODUiLCJhdWQiOiJkZXYiLCJpYXQiOjE2MzQxNDUxNjgsImV4cCI6MTYzNDIzMTU2OCwiYXpwIjoiMG5IVlFFeHFYVDRRR2piVnJmSjQwUkwyY2c5TXMzNTEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOm1vdmllcyIsInBvc3Q6bW92aWVzIl19.StdlemsBrl33XwSaYCzdRXc0jjI1EDZw_NZaOrY6i4i4QxAeaynkL-PJQ10Z-aUGYauIhIWDjk46QT6QKt9Ss4EuJqUqUcReQK3gwdTR614Rc1PiTpb8QPpAlXtELC-oHcXliz_wPsCNgVFJjTVyGU_HniDT4zBf95lmFSc7OEVMOn2-vOR5Pv24CI5UPv3cKxelfu4tdAl3kxOkcgrwCSwTorITM8fmvhE1tEIRG2w8D5jdf1M_X3Yn-SnjFZIRnF_1P01_At5Ub48U9UJnW6AxxAyPh82n0thFaZ77sPbyknXmEzizlM0pmLwvGVDwYMQlbNHEJ00ykUFTHwJe4Q",
 									"type": "string"
 								}
 							]
@@ -114,13 +117,14 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}/movies/21",
+							"raw": "localhost:5000/movies/2",
 							"host": [
-								"{{host}}"
+								"localhost"
 							],
+							"port": "5000",
 							"path": [
 								"movies",
-								"21"
+								"2"
 							]
 						}
 					},
@@ -132,10 +136,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}/actors",
+							"raw": "localhost:5000/actors",
 							"host": [
-								"{{host}}"
+								"localhost"
 							],
+							"port": "5000",
 							"path": [
 								"actors"
 							]
@@ -148,7 +153,174 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": null
+						"url": {
+							"raw": "localhost:5000/coolkids",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"coolkids"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "capstone hosted by heroku",
+			"item": [
+				{
+					"name": "/movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://capstone25.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"capstone25",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3TXdLQUNJYWxDUzllZHAwQnl4dSJ9.eyJpc3MiOiJodHRwczovL2Rldi1kMnc0aG9ueC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDgxNDg3ODQ4OTIxMjY4MjgwODUiLCJhdWQiOiJkZXYiLCJpYXQiOjE2MzQxNDU1MjksImV4cCI6MTYzNDIzMTkyOSwiYXpwIjoiMG5IVlFFeHFYVDRRR2piVnJmSjQwUkwyY2c5TXMzNTEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOm1vdmllcyIsInBvc3Q6bW92aWVzIl19.CTPoEcUDy8AYQzet_08sk5IHOcW8Fw1BqRvCKyHG8FQTMVMwUUYLSZiw0V2zg7LI7gCP2RoIELDaNz-Q0kj9lMtfvzPod9DDat2xctFj-gSNmD-gg75ZI1eitmcG8UibMjfc15602zV0l0TSDtXDchJGdqSb_bwdj_u9ANgE9Wq8HGC6uqzevBA7XUHjDRaKQNNKL7zVezBoONfgHC9p1snEKrLJG8_3tJLYmmJxUoT6pcwgH2ynlG-AEyNozNRvZzBLDjT3Bj8J4hPr7Ft5svsmTx7gVQA--c8UF3U1D7tIGVJ2z9r2cvqc04jdfE6yLPBE2dckJAQ7iZoBzH176w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \" the new movie\",\n    \"release_date\": \"10,08,2021\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone25.herokuapp.com/movies",
+							"protocol": "https",
+							"host": [
+								"capstone25",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3TXdLQUNJYWxDUzllZHAwQnl4dSJ9.eyJpc3MiOiJodHRwczovL2Rldi1kMnc0aG9ueC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDgxNDg3ODQ4OTIxMjY4MjgwODUiLCJhdWQiOiJkZXYiLCJpYXQiOjE2MzQxNDU1MjksImV4cCI6MTYzNDIzMTkyOSwiYXpwIjoiMG5IVlFFeHFYVDRRR2piVnJmSjQwUkwyY2c5TXMzNTEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOm1vdmllcyIsInBvc3Q6bW92aWVzIl19.CTPoEcUDy8AYQzet_08sk5IHOcW8Fw1BqRvCKyHG8FQTMVMwUUYLSZiw0V2zg7LI7gCP2RoIELDaNz-Q0kj9lMtfvzPod9DDat2xctFj-gSNmD-gg75ZI1eitmcG8UibMjfc15602zV0l0TSDtXDchJGdqSb_bwdj_u9ANgE9Wq8HGC6uqzevBA7XUHjDRaKQNNKL7zVezBoONfgHC9p1snEKrLJG8_3tJLYmmJxUoT6pcwgH2ynlG-AEyNozNRvZzBLDjT3Bj8J4hPr7Ft5svsmTx7gVQA--c8UF3U1D7tIGVJ2z9r2cvqc04jdfE6yLPBE2dckJAQ7iZoBzH176w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://capstone25.herokuapp.com/movies/3",
+							"protocol": "https",
+							"host": [
+								"capstone25",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/actors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://capstone25.herokuapp.com/actors",
+							"protocol": "https",
+							"host": [
+								"capstone25",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movies/2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjQ3TXdLQUNJYWxDUzllZHAwQnl4dSJ9.eyJpc3MiOiJodHRwczovL2Rldi1kMnc0aG9ueC51cy5hdXRoMC5jb20vIiwic3ViIjoiZ29vZ2xlLW9hdXRoMnwxMDgxNDg3ODQ4OTIxMjY4MjgwODUiLCJhdWQiOiJkZXYiLCJpYXQiOjE2MzQxNDU1MjksImV4cCI6MTYzNDIzMTkyOSwiYXpwIjoiMG5IVlFFeHFYVDRRR2piVnJmSjQwUkwyY2c5TXMzNTEiLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTptb3ZpZXMiLCJnZXQ6YWN0b3JzIiwiZ2V0Om1vdmllcyIsInBhdGNoOm1vdmllcyIsInBvc3Q6bW92aWVzIl19.CTPoEcUDy8AYQzet_08sk5IHOcW8Fw1BqRvCKyHG8FQTMVMwUUYLSZiw0V2zg7LI7gCP2RoIELDaNz-Q0kj9lMtfvzPod9DDat2xctFj-gSNmD-gg75ZI1eitmcG8UibMjfc15602zV0l0TSDtXDchJGdqSb_bwdj_u9ANgE9Wq8HGC6uqzevBA7XUHjDRaKQNNKL7zVezBoONfgHC9p1snEKrLJG8_3tJLYmmJxUoT6pcwgH2ynlG-AEyNozNRvZzBLDjT3Bj8J4hPr7Ft5svsmTx7gVQA--c8UF3U1D7tIGVJ2z9r2cvqc04jdfE6yLPBE2dckJAQ7iZoBzH176w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"The new title\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://capstone25.herokuapp.com/movies/2",
+							"protocol": "https",
+							"host": [
+								"capstone25",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"movies",
+								"2"
+							]
+						}
 					},
 					"response": []
 				}
@@ -173,12 +345,6 @@
 					""
 				]
 			}
-		}
-	],
-	"variable": [
-		{
-			"key": "host",
-			"value": "localhost:5000"
 		}
 	]
 }
