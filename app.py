@@ -148,21 +148,21 @@ def create_app(test_config=None):
         }), e.status_code
 
 
-  @app.errorhandler(401)
-  def unauthorized(error):
-    return jsonify({
-        "success": False,
-        "error":401,
-        "message": 'Unauthorized'
-      }),401
+#   @app.errorhandler(401)
+#   def unauthorized(error):
+#     return jsonify({
+#         "success": False,
+#         "error":401,
+#         "message": 'Unauthorized'
+#       }),401
 
-  @app.errorhandler(403)
-  def forbidden(error):
-        return jsonify({
-            'success': False,
-            'error':403,
-            'message': 'Forbidden'
-        }),403
+#   @app.errorhandler(403)
+#   def forbidden(error):
+#         return jsonify({
+#             'success': False,
+#             'error':403,
+#             'message': 'Forbidden'
+#         }),403
 
   @app.errorhandler(400)
   def bad_request(error):
