@@ -107,12 +107,12 @@ class Actors(db.Model):
 
 
     def format(self):
-        return {
+        return [{
             'id': self.id,
             'name': self.name,
             'age': self.age,
             'gender': self.gender,
-            }
+            }]
 
     def insert(self):
         db.session.add(self)
