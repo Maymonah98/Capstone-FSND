@@ -61,13 +61,13 @@ class Movies(db.Model):
     def format(self):
         formatted_actors=[actor.name.format() for actor in self.actors]
 
-        return {
+        return [{
             'id': self.id,
             'title': self.title,
             'release_date':  format_date(str(self.release_date)),
             'actors': formatted_actors
 
-            }
+            }]
 
     
     
